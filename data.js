@@ -115,6 +115,7 @@ let flowers = [
 const quiz = [
     {
         id: 1,
+        image: flowers[0],
         questionText: 'What Flower is this?',
         answerOptions: [
             { answerText: 'Lily', isCorrect: false },
@@ -125,6 +126,7 @@ const quiz = [
     },
     {
         id: 1,
+        image: flowers[0],
         questionText: 'How Long Do Acaia Trees live?',
         answerOptions: [
             { answerText: '10-20 years', isCorrect: false },
@@ -134,6 +136,7 @@ const quiz = [
     },
     {
         id: 1,
+        image: flowers[0],
         questionText: 'What animals feed off this?',
         answerOptions: [
             { answerText: 'Both of these', isCorrect: true },
@@ -143,6 +146,7 @@ const quiz = [
     },
     {
         id: 1,
+        image: flowers[0],
         questionText: 'Where do these trees grow?',
         answerOptions: [
             { answerText: 'Austrailia', isCorrect: false },
@@ -152,6 +156,7 @@ const quiz = [
     },
     {
         id: 1,
+        image: flowers[0],
         questionText: 'What protection do these trees have for herbivores?',
         answerOptions: [
             
@@ -162,6 +167,7 @@ const quiz = [
     },
     {
         id: 1,
+        image: flowers[0],
         questionText: 'What color do these leaves have when blooming?',
         answerOptions: [
             { answerText: 'Red', isCorrect: false },
