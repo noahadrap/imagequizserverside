@@ -27,6 +27,14 @@ app.get('/quiz/:id', (request, response) => {
     response.json(ids);
  });
 
+ app.post('/score', (request, response) => {
+     let score = request.body.score;
+     let quizid = request.body.quizid;
+     let username = request.body.username;
+     data.scores.push({score : score, quizid : quizid, username : username});
+     response.send('this score was saved successfully')
+ })
+
  app.get('/', (request, response) => {
     response.send("Welcome to image quiz server side");
  });

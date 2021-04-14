@@ -178,6 +178,7 @@ const quiz = [
      
     {
         id: 2,
+        image: flowers[1],
         questionText: 'What Flower is this?',
         answerOptions: [
             { answerText: 'Lily', isCorrect: false },
@@ -188,6 +189,7 @@ const quiz = [
     },
     {
         id: 2,
+        image: flowers[1],
         questionText: 'How are the smell of these best described?',
         answerOptions: [
             { answerText: 'No smell', isCorrect: false },
@@ -197,6 +199,7 @@ const quiz = [
     },
     {
         id: 2,
+        image: flowers[1],
         questionText: 'How long do these spread?',
         answerOptions: [
             { answerText: '3 to 6 inches', isCorrect: true },
@@ -206,6 +209,7 @@ const quiz = [
     },
     {
         id: 2,
+        image: flowers[1],
         questionText: 'Are these poisonous?',
         answerOptions: [
             { answerText: 'Only to Humans', isCorrect: false },
@@ -215,6 +219,7 @@ const quiz = [
     },
     {
         id: 2,
+        image: flowers[1],
         questionText: 'What does this classify as?',
         answerOptions: [
             
@@ -225,6 +230,7 @@ const quiz = [
     },
     {
         id: 2,
+        image: flowers[1],
         questionText: 'How Many Seeds are in a cell?',
         answerOptions: [
             { answerText: '4', isCorrect: false },
@@ -235,6 +241,7 @@ const quiz = [
 
     {
         id: 3,
+        image: flowers[2],
         questionText: 'What Flower is this?',
         answerOptions: [
             { answerText: 'Lily', isCorrect: false },
@@ -245,6 +252,7 @@ const quiz = [
     },
     {
         id: 3,
+        image: flowers[2],
         questionText: 'What is this flower known to symbolize?',
         answerOptions: [
             { answerText: 'Love', isCorrect: false },
@@ -254,6 +262,7 @@ const quiz = [
     },
     {
         id: 3,
+        image: flowers[2],
         questionText: "How long is this flower's lifespan?",
         answerOptions: [
             { answerText: '6 weeks', isCorrect: true },
@@ -263,6 +272,7 @@ const quiz = [
     },
     {
         id: 3,
+        image: flowers[2],
         questionText: 'Are these poisonous?',
         answerOptions: [
             { answerText: 'Only to Humans', isCorrect: false },
@@ -272,6 +282,7 @@ const quiz = [
     },
     {
         id: 3,
+        image: flowers[2],
         questionText: 'How tall do these grow?',
         answerOptions: [
             
@@ -282,6 +293,7 @@ const quiz = [
     },
     {
         id: 3,
+        image: flowers[2],
         questionText: 'Where are these native to?',
         answerOptions: [
             { answerText: 'Austrailia', isCorrect: false },
@@ -293,5 +305,6 @@ const quiz = [
 
 ];
 
-module.exports = { flowers, quiz }
+let scores = [];
+module.exports = { flowers, quiz, scores }
 
