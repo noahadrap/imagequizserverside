@@ -16,7 +16,7 @@ app.get('/flowers', (request, response) => {
     response.json(data.flowers);
  });
 
-app.get('/quizzes/:id', (request, response) => {
+app.get('/quiz/:id', (request, response) => {
     let ids = []
     let id = request.params.id
     for ( i=0; i < data.quiz.length; i++) {
