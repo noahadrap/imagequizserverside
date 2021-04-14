@@ -112,8 +112,9 @@ let flowers = [
     }
 ];
 
-const quiz1 = [
+const quiz = [
     {
+        id: 1,
         questionText: 'What Flower is this?',
         answerOptions: [
             { answerText: 'Lily', isCorrect: false },
@@ -123,6 +124,7 @@ const quiz1 = [
         ],
     },
     {
+        id: 1,
         questionText: 'How Long Do Acaia Trees live?',
         answerOptions: [
             { answerText: '10-20 years', isCorrect: false },
@@ -131,6 +133,7 @@ const quiz1 = [
         ],
     },
     {
+        id: 1,
         questionText: 'What animals feed off this?',
         answerOptions: [
             { answerText: 'Both of these', isCorrect: true },
@@ -139,6 +142,7 @@ const quiz1 = [
         ],
     },
     {
+        id: 1,
         questionText: 'Where do these trees grow?',
         answerOptions: [
             { answerText: 'Austrailia', isCorrect: false },
@@ -147,6 +151,7 @@ const quiz1 = [
         ],
     },
     {
+        id: 1,
         questionText: 'What protection do these trees have for herbivores?',
         answerOptions: [
             
@@ -156,6 +161,7 @@ const quiz1 = [
         ],
     },
     {
+        id: 1,
         questionText: 'What color do these leaves have when blooming?',
         answerOptions: [
             { answerText: 'Red', isCorrect: false },
@@ -163,8 +169,123 @@ const quiz1 = [
             { answerText: 'Yellow', isCorrect: true },
         ],
     },
+     
+    {
+        id: 2,
+        questionText: 'What Flower is this?',
+        answerOptions: [
+            { answerText: 'Lily', isCorrect: false },
+            { answerText: 'Daisy', isCorrect: false },
+            { answerText: 'Alyssum', isCorrect: true },
+            
+        ],
+    },
+    {
+        id: 2,
+        questionText: 'How are the smell of these best described?',
+        answerOptions: [
+            { answerText: 'No smell', isCorrect: false },
+            { answerText: 'Sweet', isCorrect: true },
+            { answerText: 'Sour', isCorrect: false },
+        ],
+    },
+    {
+        id: 2,
+        questionText: 'How long do these spread?',
+        answerOptions: [
+            { answerText: '3 to 6 inches', isCorrect: true },
+            { answerText: '6 to 9 inches', isCorrect: false },
+            { answerText: '9 to 12 inches', isCorrect: false },
+        ],
+    },
+    {
+        id: 2,
+        questionText: 'Are these poisonous?',
+        answerOptions: [
+            { answerText: 'Only to Humans', isCorrect: false },
+            { answerText: 'Yes', isCorrect: false },
+            { answerText: 'No', isCorrect: true },
+        ],
+    },
+    {
+        id: 2,
+        questionText: 'What does this classify as?',
+        answerOptions: [
+            
+            { answerText: 'Flower', isCorrect: false },
+            { answerText: 'Tree', isCorrect: false },
+            { answerText: 'Evergreen', isCorrect: true },
+        ],
+    },
+    {
+        id: 2,
+        questionText: 'How Many Seeds are in a cell?',
+        answerOptions: [
+            { answerText: '4', isCorrect: false },
+            { answerText: '6', isCorrect: false },
+            { answerText: '1', isCorrect: true },
+        ],
+    },
+
+    {
+        id: 3,
+        questionText: 'What Flower is this?',
+        answerOptions: [
+            { answerText: 'Lily', isCorrect: false },
+            { answerText: 'Daisy', isCorrect: false },
+            { answerText: 'Amaryllis', isCorrect: true },
+            
+        ],
+    },
+    {
+        id: 3,
+        questionText: 'What is this flower known to symbolize?',
+        answerOptions: [
+            { answerText: 'Love', isCorrect: false },
+            { answerText: 'Strength', isCorrect: true },
+            { answerText: 'Hate', isCorrect: false },
+        ],
+    },
+    {
+        id: 3,
+        questionText: "How long is this flower's lifespan?",
+        answerOptions: [
+            { answerText: '6 weeks', isCorrect: true },
+            { answerText: '2 weeks', isCorrect: false },
+            { answerText: '5 months', isCorrect: false },
+        ],
+    },
+    {
+        id: 3,
+        questionText: 'Are these poisonous?',
+        answerOptions: [
+            { answerText: 'Only to Humans', isCorrect: false },
+            { answerText: 'Yes', isCorrect: false },
+            { answerText: 'No', isCorrect: true },
+        ],
+    },
+    {
+        id: 3,
+        questionText: 'How tall do these grow?',
+        answerOptions: [
+            
+            { answerText: '0-12 inches', isCorrect: false },
+            { answerText: '36-48 inches', isCorrect: false },
+            { answerText: '18-36 inches', isCorrect: true },
+        ],
+    },
+    {
+        id: 3,
+        questionText: 'Where are these native to?',
+        answerOptions: [
+            { answerText: 'Austrailia', isCorrect: false },
+            { answerText: 'Europe', isCorrect: false },
+            { answerText: 'Africa', isCorrect: true },
+        ],
+    },
+
 
 ];
 
-module.exports = { flowers, quiz1 }
+module.exports = { flowers, quiz }
 
