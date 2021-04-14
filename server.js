@@ -14,6 +14,6 @@ app.get('/flowers', (request, response) => {
  });
 
  app.get('/', (request, response) => {
-    response.send("hello world");
+    response.send("Welcome to image quiz server side");
  });
 app.listen(port, () => console.log("listening on port " + port))
