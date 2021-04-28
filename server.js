@@ -3,37 +3,40 @@ const cors = require('cors')
 const data = require('./data');
 const app = express();
 const port = process.env.PORT || 4002;
+const db = require('./db');
 
 
 app.use(express.json());
 app.use(cors());
 
 app.get('/quizzes', (request, response) => {
-   response.json(data.quiz);
+   db.getQuizzes()
+   .then(quizzes => response.json(quizzes))
+   .catch(e => {console.log(e); response.status(500).send('there was an error in getting quizzes')})
 });
 
 app.get('/flowers', (request, response) => {
-    response.json(data.flowers);
+    db.getFlowers()
+   .then(quizzes => response.json(quizzes))
+   .catch(e => {console.log(e); response.status(500).send('there was an error in getting quizzes')})
+    
+
  });
 
 app.get('/quiz/:id', (request, response) => {
-    let ids = []
-    let id = request.params.id
-    for ( i=0; i < data.quiz.length; i++) {
-        if (data.quiz[i].id == Number(id)) {
-            ids.push(data.quiz[i])
-        }
-    }
-    response.json(ids);
+    db.getQuiz(request.params.id)
+    .then(quiz => response.json(quiz))
+    .catch(e => {console.log(e); response.status(500).send('there was an error in getting the quiz');});
  });
 
  app.post('/score', (request, response) => {
-     let score = request.body.score;
-     let quizid = request.body.quizid;
-     let username = request.body.username;
-     data.scores.push({score : score, quizid : quizid, username : username});
-     response.send('this score was saved successfully')
- })
+    db.getScores()
+    .then(quizzes => response.json(quizzes))
+    .catch(e => {console.log(e); response.status(500).send('there was an error in getting scores')})
+     
+ 
+
+ });
 
  app.get('/', (request, response) => {
     response.send("Welcome to image quiz server side");

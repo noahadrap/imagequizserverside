@@ -9,6 +9,7 @@ create table imagequiz.questions
 (
 	id bigserial primary key,
 	flowerid integer references imagequiz.flowers(id),
+	questiontext text not null,
 	choices text not null,
 	answer text not null
 );
@@ -35,3 +36,4 @@ create table imagequiz.scores
 	quizid integer references imagequiz.quizzes(id),
 	score integer not null
 );
+
