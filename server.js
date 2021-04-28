@@ -17,7 +17,7 @@ app.get('/quizzes', (request, response) => {
 
 app.get('/flowers', (request, response) => {
     db.getFlowers()
-   .then(quizzes => response.json(quizzes))
+   .then(flowers => response.json(flowers))
    .catch(e => {console.log(e); response.status(500).send('there was an error in getting quizzes')})
     
 
@@ -31,7 +31,7 @@ app.get('/quiz/:id', (request, response) => {
 
  app.post('/score', (request, response) => {
     db.getScores()
-    .then(quizzes => response.json(quizzes))
+    .then(scores => response.json(scores))
     .catch(e => {console.log(e); response.status(500).send('there was an error in getting scores')})
      
  

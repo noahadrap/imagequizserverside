@@ -32,9 +32,9 @@ let getFlowers = () => {
     .then(result => result.rows);
 }
 
-let getUsers = () => {
+let getScores = () => {
     console.log(connectionString)
-    let sql = `select * from imagequiz.customers`
+    let sql = `select * from imagequiz.scores`
     return pool.query(sql)
     .then(result => result.rows);
 }
@@ -50,6 +50,6 @@ let getQuiz = (quiznumber) => {
     .then(result => result.rows);
 }
 
-module.exports = {getQuizzes, getQuiz, getFlowers}
+module.exports = {getQuizzes, getQuiz, getFlowers, getScores}
 
 
