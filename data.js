@@ -490,6 +490,7 @@ const quiz = [
         ],
     },
     {
+        id: 7,
         questionText: 'What Flower is this?',
         answerOptions: [
             { answerText: 'Lily', isCorrect: false },

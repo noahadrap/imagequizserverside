@@ -32,11 +32,12 @@ let getFlowers = () => {
     .then(result => result.rows);
 }
 
-let getScores = () => {
+let saveScores = (customerId, quizId, score) => {
     console.log(connectionString)
-    let sql = `select * from imagequiz.scores`
-    return pool.query(sql)
-    .then(result => result.rows);
+    let sql = `insert into imagequiz.scores(customerid, quizid, score) values ($1, $2, $3)`;
+    return pool.query(sql, [customerId, quizId,score])
+    .then(() => console.log('the score was saved'))
+    .catch(e => console.log(e));
 }
 
 let getQuiz = (quiznumber) => {
@@ -50,6 +51,6 @@ let getQuiz = (quiznumber) => {
     .then(result => result.rows);
 }
 
-module.exports = {getQuizzes, getQuiz, getFlowers, getScores}
+module.exports = {getQuizzes, getQuiz, getFlowers, saveScores}
 
 

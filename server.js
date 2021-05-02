@@ -18,7 +18,7 @@ app.get('/quizzes', (request, response) => {
 app.get('/flowers', (request, response) => {
     db.getFlowers()
    .then(flowers => response.json(flowers))
-   .catch(e => {console.log(e); response.status(500).send('there was an error in getting quizzes')})
+   .catch(e => {console.log(e); response.status(500).send('there was an error in getting flowers')})
     
 
  });
