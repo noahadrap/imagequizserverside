@@ -88,7 +88,7 @@ let flowers = [
     },
     {
         name: "Orchid",
-        picture: "https://habahram.blob.core.windows.net/flowers/orchid.jpg" 
+        picture: "https://habahram.blob.core.windows.net/flowers/orchid.jpg"
     },
     {
         name: "Primrose",

@@ -2,7 +2,7 @@ create table imagequiz.flowers
 (
 	id bigserial primary key,
 	name text not null,
-	picture text not null 
+	picture text not null
 );
 
 create table imagequiz.questions
