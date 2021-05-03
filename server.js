@@ -4,6 +4,7 @@ const data = require('./data');
 const app = express();
 const port = process.env.PORT || 4002;
 const db = require('./db');
+const utility = require('./utility')
 
 
 app.use(express.json());
@@ -25,7 +26,7 @@ app.get('/flowers', (request, response) => {
 
 app.get('/quiz/:id', (request, response) => {
     db.getQuiz(request.params.id)
-    .then(quiz => response.json(quiz))
+    .then(quiz => {console.log(quiz); response.json(utility.convertQuiz(quiz));})
     .catch(e => {console.log(e); response.status(500).send('there was an error in getting the quiz');});
  });
 

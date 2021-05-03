@@ -42,13 +42,13 @@ let saveScores = (customerId, quizId, score) => {
 
 let getQuiz = (quiznumber) => {
     console.log(connectionString);
-    let sql = `select q.quiznumber, json_agg (json_build_object('flower', f.picture, 'choices', choices, 'answer', answer))
+    let sql = `select q.quiznumber, json_agg (json_build_object('flower', f.picture, 'choices', choices, 'answer', answer, 'questiontext', questiontext, 'flowerid', f.id)) as questions
     from imagequiz.quizzes q
     inner join imagequiz.questions p on q.questionid = p.id 
     inner join imagequiz.flowers f on p.flowerid = f.id
     where q.quiznumber = $1 group by q.quiznumber`;
     return pool.query(sql, [quiznumber])
-    .then(result => result.rows);
+    .then(result => result.rows[0]);
 }
 
 module.exports = {getQuizzes, getQuiz, getFlowers, saveScores}
