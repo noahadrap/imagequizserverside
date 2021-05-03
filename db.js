@@ -27,7 +27,7 @@ let getQuizzes = () => {
 
 let getFlowers = () => {
     console.log(connectionString)
-    let sql = `select * from imagequiz.flowers`
+    let sql = `select * from imagequiz.flowers order by name`
     return pool.query(sql)
     .then(result => result.rows);
 }

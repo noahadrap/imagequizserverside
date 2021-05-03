@@ -30,7 +30,7 @@ app.get('/quiz/:id', (request, response) => {
  });
 
  app.post('/score', (request, response) => {
-    db.getScores()
+    db.saveScores()
     .then(scores => response.json(scores))
     .catch(e => {console.log(e); response.status(500).send('there was an error in getting scores')})
      
